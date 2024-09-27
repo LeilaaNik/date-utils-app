@@ -8,10 +8,12 @@
 const formatDate = require('./formatDate')
 const parseDate = require('./parseDate')
 const dateDifference = require('./dateDifference')
+const addDays = require('./addDays')
 
 
 module.exports = {
   formatDate,
   parseDate,
-  dateDifference
+  dateDifference,
+  addDays
 }
