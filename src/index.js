@@ -6,10 +6,12 @@
 
 // Import the functions from the modules
 const formatDate = require('./formatDate')
-const parseDate = require('./parseDate');
+const parseDate = require('./parseDate')
+const dateDifference = require('./dateDifference')
 
 
 module.exports = {
   formatDate,
-  parseDate
+  parseDate,
+  dateDifference
 }
