@@ -6,8 +6,10 @@
 
 // Import the functions from the modules
 const formatDate = require('./formatDate')
+const parseDate = require('./parseDate');
 
 
 module.exports = {
-  formatDate
+  formatDate,
+  parseDate
 }
