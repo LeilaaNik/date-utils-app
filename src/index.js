@@ -9,11 +9,13 @@ const formatDate = require('./formatDate')
 const parseDate = require('./parseDate')
 const dateDifference = require('./dateDifference')
 const addDays = require('./addDays')
+const isWeekend = require('./isWeekend')
 
 
 module.exports = {
   formatDate,
   parseDate,
   dateDifference,
-  addDays
+  addDays,
+  isWeekend
 }
