@@ -5,15 +5,14 @@
  */
 
 // Import the functions from the modules
-const formatDate = require('./formatDate')
+const createDateFormatter = require('./createDateFormatter')
 const parseDate = require('./parseDate')
 const dateDifference = require('./dateDifference')
 const addDays = require('./addDays')
 const isWeekend = require('./isWeekend')
 
-
 module.exports = {
-  formatDate,
+  createDateFormatter,
   parseDate,
   dateDifference,
   addDays,
