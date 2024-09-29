@@ -3,6 +3,7 @@
  *
  * @param {string} dateString - The date string to parse
  * @returns {Date} The parsed date object
+ * @throws {Error} If the date string format is invalid
  */
 function parseDate (dateString) {
   if (!isValidDateString(dateString)) {
@@ -30,12 +31,19 @@ function isValidDateString (dateString) {
  *
  * @param {string} dateString - The date string to extract components from
  * @returns {Array} An array containing the year, month, and day as strings
+ * @throws {Error} If any date component is invalid
  */
 function extractDateComponents (dateString) {
   const [year, month, day] = dateString.split('-')
 
-  if (!isValidYear(year) || !isValidMonth(month) || !isValidDay(day)) {
-    throw new Error('Invalid date components')
+  if (!isValidYear(year)) {
+    throw new Error('Invalid year component')
+  }
+  if (!isValidMonth(month)) {
+    throw new Error('Invalid month component')
+  }
+  if (!isValidDay(day)) {
+    throw new Error('Invalid day component')
   }
 
   return [year, month, day]
@@ -46,10 +54,14 @@ function extractDateComponents (dateString) {
  *
  * @param {string} year - The year component to validate
  * @returns {boolean} True if the year is valid, false otherwise
+ * @throws {Error} If the year is invalid
  */
 function isValidYear (year) {
   const yearNum = parseInt(year, 10)
-  return yearNum >= 0 && yearNum <= 9999
+  if (yearNum < 0 || yearNum > 9999) {
+    throw new Error('Year must be between 0 and 9999')
+  }
+  return true
 }
 
 /**
@@ -57,10 +69,14 @@ function isValidYear (year) {
  *
  * @param {string} month - The month component to validate
  * @returns {boolean} True if the month is valid, false otherwise
+ * @throws {Error} If the month is invalid
  */
 function isValidMonth (month) {
   const monthNum = parseInt(month, 10)
-  return monthNum >= 1 && monthNum <= 12
+  if (monthNum < 1 || monthNum > 12) {
+    throw new Error('Month must be between 1 and 12')
+  }
+  return true
 }
 
 /**
@@ -68,10 +84,14 @@ function isValidMonth (month) {
  *
  * @param {string} day - The day component to validate
  * @returns {boolean} True if the day is valid, false otherwise
+ * @throws {Error} If the day is invalid
  */
 function isValidDay (day) {
   const dayNum = parseInt(day, 10)
-  return dayNum >= 1 && dayNum <= 31 
+  if (dayNum < 1 || dayNum > 31) {
+    throw new Error('Day must be between 1 and 31')
+  }
+  return true
 }
 
 /**
