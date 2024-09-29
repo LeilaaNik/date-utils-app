@@ -5,6 +5,7 @@
  * @param {Date} dates.date1 - The first date
  * @param {Date} dates.date2 - The second date
  * @returns {number} The difference in days between the two dates
+ * @throws {Error} If any date object is invalid
  */
 function dateDifference (dates) {
   validateDates(dates.date1, dates.date2)
