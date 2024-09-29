@@ -11,8 +11,13 @@ function createDateFormatter () {
    *
    * @param {Date} date - The date object to format
    * @returns {string} The formatted date string
+   * @throws {Error} If the date object is invalid
    */
   function formatDate (date) {
+    if (!isValidDate(date)) {
+      throw new Error('Invalid date object')
+    }
+
     const tokens = getTokens(date)
     return replaceTokens(format, tokens)
   }
@@ -87,6 +92,16 @@ function createDateFormatter () {
       }
       return match
     })
+  }
+
+  /**
+   * Checks if a date object is valid.
+   *
+   * @param {Date} date - The date object to validate
+   * @returns {boolean} True if the date object is valid, false otherwise
+   */
+  function isValidDate (date) {
+    return date instanceof Date && !isNaN(date)
   }
 
   return formatDate
