@@ -18,21 +18,17 @@ This document summarizes the tests performed on the Date Utils module. The modul
 | parseDate - valid year component         | Parsed a date string with a valid year component and compared to expected output     | Passed       |
 | parseDate - valid month component        | Parsed a date string with a valid month component and compared to expected output    | Passed       |
 | parseDate - valid day component          | Parsed a date string with a valid day component and compared to expected output      | Passed       |
-
 | addDays - valid date and days            | Added days to a valid date and compared the output to the expected Date object       | Passed       |
 | addDays - invalid date                   | Added days to an invalid date and checked for thrown errors                          | Passed       |
 | addDays - invalid number of days         | Added an invalid number of days to a valid date and checked for thrown errors        | Passed       |
 | addDays - NaN number of days             | Added `NaN` as the number of days to a valid date and checked for thrown errors      | Passed       |
 | addDays - NaN date                       | Added days to a `NaN` date and checked for thrown errors                             | Passed       |
-
 | createDateFormatter - valid date         | Formatted a valid date and compared the output to the expected formatted string      | Passed       |
 | createDateFormatter - invalid date object| Formatted an invalid date object and checked for thrown errors                       | Passed       |
 | createDateFormatter - NaN date           | Formatted a `NaN` date and checked for thrown errors                                 | Passed       |
-
 | dateDifference - valid dates             | Calculated the difference between two valid dates and compared to expected output    | Passed       |
 | dateDifference - invalid date objects    | Calculated the difference between invalid date objects and checked for thrown errors | Passed       |
 | dateDifference - NaN date objects        | Calculated the difference between `NaN` date objects and checked for thrown errors   | Passed       |
-
 | isWeekend - Saturday                     | Checked if a Saturday is a weekend and compared to expected output                   | Passed       |
 | isWeekend - Sunday                       | Checked if a Sunday is a weekend and compared to expected output                     | Passed       |
 | isWeekend - weekday                      | Checked if a weekday is not a weekend and compared to expected output                | Passed       |
