@@ -2,7 +2,7 @@
   "name": "date-utils",
   "version": "1.0.0",
   "description": "A utility library for handling date and time operations.",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest"
   },
