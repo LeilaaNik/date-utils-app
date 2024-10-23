@@ -1,9 +1,16 @@
 # Date Utils
 
 ## Description
-A utility library for date manipulation and formatting in JavaScript.
+A comprehensive utility library for date manipulation and formatting in JavaScript. This library provides a set of robust and easy-to-use functions to handle common date operations such as formatting dates, parsing date strings, calculating date differences, adding days to dates, and checking if a date falls on a weekend.
 
-## Installation
+### Vision
+Our vision is to simplify date manipulation in JavaScript by providing a reliable and efficient library that can be easily integrated into any project. Whether you are building a small application or a large enterprise system, our library aims to save you time and effort by handling all your date-related needs.
+
+### Basic Requirements
+- Node.js (version 12 or higher)
+- npm (version 6 or higher)
+
+## Installation with clone
 To install the library, follow these steps:
 
 1. Clone the repository:
@@ -21,6 +28,51 @@ To install the library, follow these steps:
     npm install
     ```
 
+## Code Example
+Here are some examples of how to use the functions provided by this library:
+
+### `parseDate`
+Parses a date string into a JavaScript `Date` object.
+```javascript
+const parseDate = require('./src/parseDate');
+const date = parseDate('2023-10-01');
+console.log(date.toISOString()); // Outputs: 2023-10-01T00:00:00.000Z 
+```
+
+### `addDays`
+Adds a specified number of days to a given date.
+```javascript
+const addDays = require('./src/addDays');
+const date = new Date('2023-10-01');
+const newDate = addDays({ date, days: 5 });
+console.log(newDate.toISOString()); // Outputs: 2023-10-06T00:00:00.000Z
+```
+
+### `createDateFormatter`
+Creates a date formatter function that formats a date object to a string in 'YYYY-MM-DD' format.
+```javascript
+const createDateFormatter = require('./src/createDateFormatter');
+const formatDate = createDateFormatter();
+const date = new Date('2023-10-01');
+console.log(formatDate(date)); // Outputs: 2023-10-01
+```
+
+### `dateDifference`
+Calculates the difference in days between two dates.
+```javascript
+const dateDifference = require('./src/dateDifference');
+const date1 = new Date('2023-10-01');
+const date2 = new Date('2023-10-10');
+console.log(dateDifference({ date1, date2 })); // Outputs: 9
+```
+
+### `isWeekend`
+Checks if a given date falls on a weekend.
+```javascript
+const isWeekend = require('./src/isWeekend');
+const date = new Date('2023-10-07');
+console.log(isWeekend({ date })); // Outputs: true
+```
 ## Dependencies
 List of dependencies, languages, and versions used in the project:
 
@@ -51,45 +103,4 @@ We welcome contributions to the project! Here are some ways you can contribute:
 3. **Submit Pull Requests**: If you have a fix or a new feature, you can submit a pull request. Please make sure to follow the project's coding standards and include tests for any new functionality.
 
 4. **Improve Documentation**: Help us improve the documentation by suggesting changes or submitting pull requests.
-
-## Code Example
-Here are some examples of how to use the functions provided by this library:
-
-### `parseDate`
-```javascript
-const parseDate = require('./src/parseDate');
-const date = parseDate('2023-10-01');
-console.log(date.toISOString()); // Outputs: 2023-10-01T00:00:00.000Z 
-```
-
-### `addDays`
-```javascript
-const addDays = require('./src/addDays');
-const date = new Date('2023-10-01');
-const newDate = addDays({ date, days: 5 });
-console.log(newDate.toISOString()); // Outputs: 2023-10-06T00:00:00.000Z
-```
-
-### `createDateFormatter`
-```javascript
-const createDateFormatter = require('./src/createDateFormatter');
-const formatDate = createDateFormatter();
-const date = new Date('2023-10-01');
-console.log(formatDate(date)); // Outputs: 2023-10-01
-```
-
-### `dateDifference`
-```javascript
-const dateDifference = require('./src/dateDifference');
-const date1 = new Date('2023-10-01');
-const date2 = new Date('2023-10-10');
-console.log(dateDifference({ date1, date2 })); // Outputs: 9
-```
-
-### `isWeekend`
-```javascript
-const isWeekend = require('./src/isWeekend');
-const date = new Date('2023-10-07');
-console.log(isWeekend({ date })); // Outputs: true
-```
 
