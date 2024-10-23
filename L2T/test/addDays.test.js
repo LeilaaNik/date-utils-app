@@ -1,4 +1,4 @@
-const addDays = require('../src/addDays')
+const addDays = require('../../L2M/addDays')
 
 test('adds days to date correctly', () => {
   const date = new Date('2023-10-01')

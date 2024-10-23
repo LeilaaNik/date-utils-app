@@ -1,4 +1,4 @@
-const isWeekend = require('../src/isWeekend')
+const isWeekend = require('../../L2M/isWeekend')
 
 test('returns true for a Saturday', () => {
   const date = new Date('2023-10-07') 

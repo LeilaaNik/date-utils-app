@@ -85,6 +85,6 @@ We welcome contributions to the project! Here are some ways you can contribute:
 
 2. **Suggest Features**: If you have an idea for a new feature, feel free to open an issue to discuss it.
 
-3. **Submit Pull Requests**: If you have a fix or a new feature, you can submit a pull request. Please make sure to follow the project's coding standards and include tests for any new functionality.
+3. **Submit Pull Requests**: If you have a fix or a new feature, you can submit a pull request. Please make sure to follow the project's coding standards.
 
 4. **Improve Documentation**: Help us improve the documentation by suggesting changes or submitting pull requests.
