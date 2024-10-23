@@ -1,0 +1,14 @@
+{
+  "name": "date-utils-app",
+  "version": "1.0.0",
+  "description": "A date-time utility app",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "author": "Leila Nikkheslat<ln223kd@student.lnu.se>",
+  "license": "MIT"
+}
