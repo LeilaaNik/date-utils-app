@@ -39,12 +39,12 @@ const date = parseDate('2023-10-01');
 console.log(date.toISOString()); // Outputs: 2023-10-01T00:00:00.000Z 
 ```
 
-### `addDays`
+### `addDaysToGivenDate`
 Adds a specified number of days to a given date.
 ```javascript
-const addDays = require('./src/addDays');
+const addDaysToGivenDate = require('./src/addDaysToGivenDate');
 const date = new Date('2023-10-01');
-const newDate = addDays({ date, days: 5 });
+const newDate = addDaysToGivenDate({ date, days: 5 });
 console.log(newDate.toISOString()); // Outputs: 2023-10-06T00:00:00.000Z
 ```
 

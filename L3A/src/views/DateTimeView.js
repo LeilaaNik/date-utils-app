@@ -14,7 +14,7 @@ class DateTimeView {
     console.log("1. Format Date");
     console.log("2. Parse Date");
     console.log("3. Calculate Date Difference");
-    console.log("4. Add Days to Date");
+    console.log("4. Add Days to Given Date");
     console.log("5. Check if Date is Weekend ");
     console.log("6. Exit");
 

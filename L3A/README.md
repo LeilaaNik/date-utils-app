@@ -55,7 +55,7 @@ The following table outlines the test cases for the app, including descriptive n
 | Format Date                           | Formats a given date to `YYYY-MM-DD`             | Date: `2023-10-01`                          | Formatted Date: `2023-10-01`               |
 | Parse Date                            | Parses a date string in `YYYY-MM-DD` format      | Date String: `2023-10-01`                   | Parsed Date: `Sun Oct 01 2023 02:00:00 GMT+0200 (Central European Summer Time)`    |
 | Calculate Date Difference             | Calculates the difference in days between dates  | First date: `2023-10-01`, Second date: `2023-10-10`    | Date Difference: `9 days`                            |
-| Add Days to Date                      | Adds a specified number of days to a date        | Date: `2023-10-01`, Days: `5`               | New Date: `Fri Oct 06 2023 02:00:00 GMT+0200 (Central European Summer Time)`                     |
+| Add Days to Given Date                      | Adds a specified number of days to a date        | Date: `2023-10-01`, Days: `5`               | New Date: `Fri Oct 06 2023 02:00:00 GMT+0200 (Central European Summer Time)`                     |
 | Check if Date is Weekend              | Checks if a given date falls on a weekend        | Date: `2023-10-07` (Saturday)               | Is Weekend: `true`                         |
 | Throw Error for Invalid Date Format   | Throws error for invalid date string format      | Date String: `2023/10/01`                   | Error: `Invalid date string format`        |
 | Throw Error for Invalid Number of Days| Throws error for invalid number of days          | Date: `2023-10-01`, Days: `five`            | Error: `Invalid number of days`            |

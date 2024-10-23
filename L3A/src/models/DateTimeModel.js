@@ -1,4 +1,4 @@
-const addDays = require('../../../L2M/addDays');
+const addDays = require('../../../L2M/addDaysToGivenDate');
 const createDateFormatter = require('../../../L2M/createDateFormatter');
 const dateDifference = require('../../../L2M/dateDifference');
 const isWeekend = require('../../../L2M/isWeekend');
@@ -47,7 +47,7 @@ class DateTimeModel {
    * @param {number} days - The number of days to add.
    * @returns {Date} The new date with the added days.
    */
-  addDaysToDate(date, days) {
+  addDaysToGivenDate(date, days) {
     return addDays({ date, days });
   }
 

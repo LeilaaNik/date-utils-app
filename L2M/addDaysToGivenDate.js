@@ -7,7 +7,7 @@
  * @returns {Date} The new date with the added days
  * @throws {Error} If the date object or days parameter is invalid
  */
-function addDays ({ date, days }) {
+function addDaysToGivenDate ({ date, days }) {
   validateDate(date)
   validateDays(days)
 
@@ -40,4 +40,4 @@ function validateDays (days) {
   }
 }
 
-module.exports = addDays
+module.exports = addDaysToGivenDate

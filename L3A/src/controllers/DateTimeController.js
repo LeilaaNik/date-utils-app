@@ -28,7 +28,7 @@ class DateTimeController {
           this.calculateDateDifference();
           break;
         case '4':
-          this.addDaysToDate();
+          this.addDaysToGivenDate();
           break;
         case '5':
           this.checkIfWeekend();
@@ -76,11 +76,11 @@ class DateTimeController {
   /**
    * Adds a specified number of days to a date entered by the user.
    */
-  addDaysToDate() {
+  addDaysToGivenDate() {
     const dateInput = this.view.getDateInput("Enter a date (YYYY-MM-DD): ");
     const days = this.view.getDaysInput("Enter number of days to add: ");
     const date = this.model.parseDate(dateInput);
-    const newDate = this.model.addDaysToDate(date, days);
+    const newDate = this.model.addDaysToGivenDate(date, days);
     this.view.displayResult("New Date: " + newDate);
   }
 
