@@ -6,11 +6,9 @@ Chapter 2 of *Clean Code* emphasizes the importance of meaningful and expressive
 ![Meaningful Names](./images/Names.png)
 
 ## Chapter 3: Functions
-Chapter 3 focuses on writing small, focused functions that do one thing well. I noticed that some of my functions, like `formatDate()`, handled multiple tasks (e.g., validation, token replacement). Following this chapter, I refactored `formatDate()` by moving the validation logic to a separate function, `isValidDate()`. Additionally, I created a `MenuController` class to handle menu choices, separating this responsibility from the `DateTimeController`. These changes improved the Single Responsibility Principle, making the code easier to maintain and extend. By keeping functions small and well-named, the code has become more modular and testable.
-However, I chose to use a `switch` statement in the `DateTimeController` to handle user menu choices. While this conflicts with the principle of avoiding `switch` statements for better code quality, I preferred it for several reasons: it provides a clear and straightforward way to handle multiple discrete choices, the number of menu options is small and unlikely to change frequently, and it allows for a simple and direct mapping of user input to actions. Here is a screenshot of the current implementation for clarity:
+Chapter 3 focuses on writing small, focused functions that do one thing well. I noticed that some of my functions, like `formatDate()`, handled multiple tasks (e.g., validation, token replacement). Following this chapter, I refactored `formatDate()` by moving the validation logic to a separate function, `isValidDate()`. These changes improved the Single Responsibility Principle, making the code easier to maintain and extend. By keeping functions small and well-named, the code has become more modular and testable. However, I chose to use a `switch` statement in the `DateTimeController` to handle user menu choices. While this conflicts with the principle of avoiding `switch` statements for better code quality, I preferred it for several reasons: it provides a clear and straightforward way to handle multiple discrete choices, the number of menu options is small and unlikely to change frequently, and it allows for a simple and direct mapping of user input to actions. Here is a screenshot of the current implementation for clarity:
 
 ![formatDate](./images/formatDate.png)
-![MenuController](./images/MenuController.png)
 ![Switch Statement](./images/SwitchStatement.png)
 
 ## Chapter 4: Comments
@@ -46,7 +44,9 @@ Chapter 9 of *Clean Code* emphasizes the importance of writing effective unit te
 ![Unit Tests](./images/UnitTests.png)
 
 ## Chapter 10: Classes
-*Your reflections on Chapter 10 here.*
+Chapter 10 of *Clean Code* emphasizes the importance of writing clean and maintainable classes. This chapter has influenced me to adhere to the Single Responsibility Principle (SRP), maintain cohesion, and encapsulate internal details. For example, in the `DateTimeController` class, I manage the interaction between the model and the view, ensuring that each class has a specific responsibility. Additionally, I created a `MenuController` class to handle menu choices, separating this responsibility from the `DateTimeController`. These changes improved the Single Responsibility Principle, making the code easier to maintain and extend. By keeping functions small and well-named, the code has become more modular and testable. Similarly, the `addDaysToGivenDate`, `createDateFormatter`, `dateDifference`, `isWeekend`, and `parseDate` functions are focused on single tasks and use validation functions to ensure data integrity. Here is a screenshot of the well-encapsulated classes and functions for clarity:
+
+![MenuController](./images/MenuController.png)
 
 ## Chapter 11: Systems
 *Your reflections on Chapter 11 here.*
