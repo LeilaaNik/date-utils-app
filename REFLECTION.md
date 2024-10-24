@@ -41,7 +41,9 @@ Chapter 8 of *Clean Code* emphasizes the importance of managing boundaries in so
 ![Boundaries](./images/Boundaries.png)
 
 ## Chapter 9: Unit Tests
-*Your reflections on Chapter 9 here.*
+Chapter 9 of *Clean Code* emphasizes the importance of writing effective unit tests. This chapter has influenced me to write tests that are fast, independent, repeatable, self-validating, and timely. For example, in the `isWeekend` and `parseDate` function tests, I ensure that the tests cover both valid and invalid inputs and have clear pass/fail results. Here is a screenshot of the well-encapsulated unit tests for clarity:
+
+![Unit Tests](./images/UnitTests.png)
 
 ## Chapter 10: Classes
 *Your reflections on Chapter 10 here.*
