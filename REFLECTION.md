@@ -17,7 +17,9 @@ Chapter 4 of *Clean Code* emphasizes the importance of writing clear and meaning
 ![Comments](./images/Comments.png)
 
 ## Chapter 5: Formatting
-*Your reflections on Chapter 5 here.*
+Chapter 5 of *Clean Code* emphasizes the importance of proper formatting to improve readability and maintainability. This chapter has influenced me to ensure consistent indentation, spacing, and naming conventions throughout my code. For example, in the `DateTimeController` class, I maintained consistent vertical and horizontal density, making the code easier to read. Additionally, I ensured that functions are short and focused on a single task, which aligns with the principles discussed in the chapter. Here is a screenshot of the well-formatted code for clarity:
+
+![Formatting](./images/Formatting.png)
 
 ## Chapter 6: Objects and Data Structures
 *Your reflections on Chapter 6 here.*
