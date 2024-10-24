@@ -31,7 +31,9 @@ Chapter 6 of *Clean Code* emphasizes the importance of using objects and data st
 
 
 ## Chapter 7: Error Handling
-*Your reflections on Chapter 7 here.*
+Chapter 7 of *Clean Code* emphasizes the importance of proper error handling. This chapter has influenced me to use exceptions rather than return codes to handle error conditions. For example, in the `dateDifference` function, I use exceptions to handle invalid date parameters, providing descriptive error messages for context. Similarly, the `createDateFormatter`, `addDaysToGivenDate`, and `isWeekend` functions use exceptions to handle error conditions. Here is a screenshot of the well-encapsulated error handling code for clarity:
+
+![Error Handling](./images/ErrorHandling.png)
 
 ## Chapter 8: Boundaries
 *Your reflections on Chapter 8 here.*
