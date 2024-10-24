@@ -49,4 +49,6 @@ Chapter 10 of *Clean Code* emphasizes the importance of writing clean and mainta
 ![MenuController](./images/MenuController.png)
 
 ## Chapter 11: Systems
-*Your reflections on Chapter 11 here.*
+Chapter 11 of *Clean Code* emphasizes the importance of designing and managing systems effectively. This chapter has influenced me to focus on the separation of construction and use, as well as the importance of clear boundaries between different parts of the system. For example, I ensured that each utility function, such as `addDaysToGivenDate`, `createDateFormatter`, `dateDifference`, `isWeekend`, and `parseDate`, is self-contained and performs a single task. This separation makes the system more modular and easier to test. Additionally, by encapsulating the interaction with third-party libraries like `readline-sync` within specific classes (`DateTimeView` and `MenuController`), I isolated external dependencies, making the system more robust and maintainable. Here is a screenshot of the well-encapsulated functions and classes for clarity:
+
+![Systems](./images/Systems.png)
