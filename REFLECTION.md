@@ -6,9 +6,10 @@ Chapter 2 of *Clean Code* emphasizes the importance of meaningful and expressive
 ![Meaningful Names](./images/Names.png)
 
 ## Chapter 3: Functions
-Chapter 3 focuses on writing small, focused functions that do one thing well. I noticed that some of my functions, like `formatDate()`, handled multiple tasks (e.g., validation, token replacement). Following this chapter, I refactored `formatDate()` by moving the validation logic to a separate function, `isValidDate()`. This improved the Single Responsibility Principle, making the code easier to maintain and extend. Additionally, I made sure functions were kept small and well-named, which makes the code more modular and testable. Here is a screenshot of the refactored code for clarity:
+Chapter 3 focuses on writing small, focused functions that do one thing well. I noticed that some of my functions, like `formatDate()`, handled multiple tasks (e.g., validation, token replacement). Following this chapter, I refactored `formatDate()` by moving the validation logic to a separate function, `isValidDate()`. Additionally, I created a `MenuController` class to handle menu choices, separating this responsibility from the `DateTimeController`. These changes improved the Single Responsibility Principle, making the code easier to maintain and extend. By keeping functions small and well-named, the code has become more modular and testable. Here is a screenshot of the refactored code for clarity:
 
 ![Functions](./images/Functions.png)
+![Functions](./images/MenuController.png)
 
 ## Chapter 4: Comments
 *Your reflections on Chapter 4 here.*
