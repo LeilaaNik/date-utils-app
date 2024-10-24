@@ -6,10 +6,12 @@ Chapter 2 of *Clean Code* emphasizes the importance of meaningful and expressive
 ![Meaningful Names](./images/Names.png)
 
 ## Chapter 3: Functions
-Chapter 3 focuses on writing small, focused functions that do one thing well. I noticed that some of my functions, like `formatDate()`, handled multiple tasks (e.g., validation, token replacement). Following this chapter, I refactored `formatDate()` by moving the validation logic to a separate function, `isValidDate()`. Additionally, I created a `MenuController` class to handle menu choices, separating this responsibility from the `DateTimeController`. These changes improved the Single Responsibility Principle, making the code easier to maintain and extend. By keeping functions small and well-named, the code has become more modular and testable. Here is a screenshot of the refactored code for clarity:
+Chapter 3 focuses on writing small, focused functions that do one thing well. I noticed that some of my functions, like `formatDate()`, handled multiple tasks (e.g., validation, token replacement). Following this chapter, I refactored `formatDate()` by moving the validation logic to a separate function, `isValidDate()`. Additionally, I created a `MenuController` class to handle menu choices, separating this responsibility from the `DateTimeController`. These changes improved the Single Responsibility Principle, making the code easier to maintain and extend. By keeping functions small and well-named, the code has become more modular and testable.
+However, I chose to use a `switch` statement in the `DateTimeController` to handle user menu choices. While this conflicts with the principle of avoiding `switch` statements for better code quality, I preferred it for several reasons: it provides a clear and straightforward way to handle multiple discrete choices, the number of menu options is small and unlikely to change frequently, and it allows for a simple and direct mapping of user input to actions. Here is a screenshot of the current implementation for clarity:
 
 ![Functions](./images/Functions.png)
-![Functions](./images/MenuController.png)
+![MenuController](./images/MenuController.png)
+![Switch Statement](./images/SwitchStatement.png)
 
 ## Chapter 4: Comments
 Chapter 4 of *Clean Code* emphasizes the importance of writing clear and meaningful comments. This chapter has influenced me to ensure that my comments explain the "why" behind the code rather than the "what". For instance, in the `dateDifference` function, I added comments to explain the purpose of each parameter and the reason for validation checks. This approach has made my code more understandable and maintainable. Additionally, I focused on avoiding redundant comments that merely restate the code. Here is a screenshot of the improved comments for clarity:
