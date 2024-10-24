@@ -1,17 +1,17 @@
 const isWeekend = require('../../L2M/isWeekend')
 
 test('returns true for a Saturday', () => {
-  const date = new Date('2023-10-07') 
+  const date = new Date('2023-10-07')
   expect(isWeekend({ date })).toBe(true)
 })
 
 test('returns true for a Sunday', () => {
-  const date = new Date('2023-10-08') 
+  const date = new Date('2023-10-08')
   expect(isWeekend({ date })).toBe(true)
 })
 
 test('returns false for a weekday', () => {
-  const date = new Date('2023-10-09') 
+  const date = new Date('2023-10-09')
   expect(isWeekend({ date })).toBe(false)
 })
 

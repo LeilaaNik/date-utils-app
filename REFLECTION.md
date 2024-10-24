@@ -3,10 +3,12 @@
 ## Chapter 2: Meaningful Names
 Chapter 2 of *Clean Code* emphasizes the importance of meaningful and expressive names, which has significantly influenced my approach to naming functions and variables. For example, I revised `addDays()` to `addDaysToGivenDate()` and `validateDays()` to `validateDaysToAdd()`. These changes make the purpose of each function more explicit, improving readability and ensuring the code conveys its intent more effectively. Previously, some function names were too generic, causing confusion about their specific purpose. By following the chapter’s guidelines, I’ve made my code more intuitive and maintainable for others. Here is a screenshot of the improved code for clarity:
 
-![Meaningful Names](./images/Meaningful%20Names.png)
+![Meaningful Names](./images/Names.png)
 
 ## Chapter 3: Functions
-*Your reflections on Chapter 3 here.*
+Chapter 3 focuses on writing small, focused functions that do one thing well. I noticed that some of my functions, like `formatDate()`, handled multiple tasks (e.g., validation, token replacement). Following this chapter, I refactored `formatDate()` by moving the validation logic to a separate function, `isValidDate()`. This improved the Single Responsibility Principle, making the code easier to maintain and extend. Additionally, I made sure functions were kept small and well-named, which makes the code more modular and testable. Here is a screenshot of the refactored code for clarity:
+
+![Functions](./images/Functions.png)
 
 ## Chapter 4: Comments
 *Your reflections on Chapter 4 here.*

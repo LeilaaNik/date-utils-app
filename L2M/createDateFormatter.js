@@ -14,12 +14,21 @@ function createDateFormatter () {
    * @throws {Error} If the date object is invalid
    */
   function formatDate (date) {
+    validateDate(date)
+    const tokens = getTokens(date)
+    return replaceTokens(format, tokens)
+  }
+
+  /**
+   * Validates the date object.
+   *
+   * @param {Date} date - The date object to validate
+   * @throws {Error} If the date object is invalid
+   */
+  function validateDate (date) {
     if (!isValidDate(date)) {
       throw new Error('Invalid date object')
     }
-
-    const tokens = getTokens(date)
-    return replaceTokens(format, tokens)
   }
 
   /**
