@@ -12,7 +12,9 @@ Chapter 3 focuses on writing small, focused functions that do one thing well. I 
 ![Functions](./images/MenuController.png)
 
 ## Chapter 4: Comments
-*Your reflections on Chapter 4 here.*
+Chapter 4 of *Clean Code* emphasizes the importance of writing clear and meaningful comments. This chapter has influenced me to ensure that my comments explain the "why" behind the code rather than the "what". For instance, in the `dateDifference` function, I added comments to explain the purpose of each parameter and the reason for validation checks. This approach has made my code more understandable and maintainable. Additionally, I focused on avoiding redundant comments that merely restate the code. Here is a screenshot of the improved comments for clarity:
+
+![Comments](./images/Comments.png)
 
 ## Chapter 5: Formatting
 *Your reflections on Chapter 5 here.*
