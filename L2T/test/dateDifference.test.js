@@ -1,4 +1,4 @@
-const dateDifference = require('../../L2M/dateDifference')
+const dateDifference = require('../../L2M/src/dateDifference')
 
 test('calculates date difference correctly', () => {
   const date1 = new Date('2023-10-01')

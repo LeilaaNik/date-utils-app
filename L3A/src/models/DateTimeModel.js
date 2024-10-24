@@ -1,8 +1,8 @@
-const addDays = require('../../../L2M/addDaysToGivenDate')
-const createDateFormatter = require('../../../L2M/createDateFormatter')
-const dateDifference = require('../../../L2M/dateDifference')
-const isWeekend = require('../../../L2M/isWeekend')
-const parseDate = require('../../../L2M/parseDate')
+const addDays = require('../../../L2M/src/addDaysToGivenDate')
+const createDateFormatter = require('../../../L2M/src/createDateFormatter')
+const dateDifference = require('../../../L2M/src/dateDifference')
+const isWeekend = require('../../../L2M/src/isWeekend')
+const parseDate = require('../../../L2M/src/parseDate')
 
 /**
  * DateTimeModel class

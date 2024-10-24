@@ -1,4 +1,4 @@
-const parseDate = require('../../L2M/parseDate')
+const parseDate = require('../../L2M/src/parseDate')
 
 test('parses date string correctly', () => {
   const dateString = '2023-10-01'

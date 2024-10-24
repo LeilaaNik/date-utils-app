@@ -1,4 +1,4 @@
-const createDateFormatter = require('../../L2M/createDateFormatter')
+const createDateFormatter = require('../../L2M/src/createDateFormatter')
 
 test('formats date correctly', () => {
   const formatDate = createDateFormatter()
