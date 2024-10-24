@@ -36,7 +36,9 @@ Chapter 7 of *Clean Code* emphasizes the importance of proper error handling. Th
 ![Error Handling](./images/ErrorHandling.png)
 
 ## Chapter 8: Boundaries
-*Your reflections on Chapter 8 here.*
+Chapter 8 of *Clean Code* emphasizes the importance of managing boundaries in software systems. This chapter has influenced me to encapsulate interactions with third-party libraries and provide clear interfaces for different operations. For example, in the `DateTimeView` and `MenuController` classes, I encapsulated the interaction with the `readline-sync` library, isolating it from the rest of the application. Similarly, the `DateTimeController` class encapsulates the interaction between the model and the view, ensuring that changes in one do not directly affect the other. The `DateTimeModel` class encapsulates various date-time utility functions, providing a clear interface for different operations. Here is a screenshot of the well-encapsulated code for clarity:
+
+![Boundaries](./images/Boundaries.png)
 
 ## Chapter 9: Unit Tests
 *Your reflections on Chapter 9 here.*
