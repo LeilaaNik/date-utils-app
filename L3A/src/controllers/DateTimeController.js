@@ -14,13 +14,14 @@ class DateTimeController {
     this.model = new DateTimeModel()
     this.view = new DateTimeView()
     this.menuController = new MenuController()
+    this.isRunning = true 
   }
 
   /**
    * Runs the main loop of the application.
    */
   run () {
-    while (true) {
+    while (this.isRunning) { 
       const choice = this.menuController.getMenuChoice()
       this.executeChoice(choice)
     }
@@ -50,7 +51,8 @@ class DateTimeController {
         break
       case '6':
         this.view.displayResult('Exiting...')
-        return
+        this.isRunning = false 
+        break
       default:
         this.view.displayResult('Invalid choice. Please try again.')
     }
