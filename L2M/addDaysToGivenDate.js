@@ -9,7 +9,7 @@
  */
 function addDaysToGivenDate ({ date, days }) {
   validateDate(date)
-  validateDays(days)
+  validateDaysToAdd(days)
 
   const result = new Date(date)
   result.setDate(result.getDate() + days)
@@ -34,7 +34,7 @@ function validateDate (date) {
  * @param {number} days - The number of days to validate
  * @throws {Error} If the days parameter is invalid
  */
-function validateDays (days) {
+function validateDaysToAdd (days) {
   if (typeof days !== 'number' || isNaN(days)) {
     throw new Error('Invalid number of days')
   }

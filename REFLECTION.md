@@ -1,8 +1,9 @@
 # Reflection
 
 ## Chapter 2: Meaningful Names
-Chapter 2 of Clean Code emphasizes the importance of meaningful and expressive names, which has significantly influenced my approach to naming functions and variables. For example, I revised my function `addDays()` to `addDaysToGivenDate()` and `validateDays()` to `validateDaysToAdd()`. These changes make the purpose of each function more explicit, aligning with the principle of clarity in naming. This not only improves readability but also ensures that the code conveys its intent more effectively.
-However, before this reflection, some function names were too generic, which could cause confusion about their specific purpose. By following the chapter’s guidelines, I’ve made my code more intuitive and maintainable for others, as the function names now better reflect the underlying logic. Here is a screenshot of the improved code for clarity:
+Chapter 2 of *Clean Code* emphasizes the importance of meaningful and expressive names, which has significantly influenced my approach to naming functions and variables. For example, I revised `addDays()` to `addDaysToGivenDate()` and `validateDays()` to `validateDaysToAdd()`. These changes make the purpose of each function more explicit, improving readability and ensuring the code conveys its intent more effectively. Previously, some function names were too generic, causing confusion about their specific purpose. By following the chapter’s guidelines, I’ve made my code more intuitive and maintainable for others. Here is a screenshot of the improved code for clarity:
+
+![Meaningful Names](./images/Meaningful%20Names.png)
 
 ## Chapter 3: Functions
 *Your reflections on Chapter 3 here.*
