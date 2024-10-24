@@ -1,5 +1,6 @@
 const DateTimeModel = require('../models/DateTimeModel')
 const DateTimeView = require('../views/DateTimeView')
+const MenuController = require('./MenuController')
 
 /**
  * DateTimeController class
@@ -12,6 +13,7 @@ class DateTimeController {
   constructor () {
     this.model = new DateTimeModel()
     this.view = new DateTimeView()
+    this.menuController = new MenuController()
   }
 
   /**
@@ -19,36 +21,45 @@ class DateTimeController {
    */
   run () {
     while (true) {
-      const choice = this.view.mainMenu()
-      switch (choice) {
-        case '1':
-          this.formatDate()
-          break
-        case '2':
-          this.parseDate()
-          break
-        case '3':
-          this.calculateDateDifference()
-          break
-        case '4':
-          this.addDaysToGivenDate()
-          break
-        case '5':
-          this.checkIfWeekend()
-          break
-        case '6':
-          this.view.displayResult('Exiting...')
-          return
-        default:
-          this.view.displayResult('Invalid choice. Please try again.')
-      }
+      const choice = this.menuController.getMenuChoice()
+      this.executeChoice(choice)
     }
   }
 
   /**
-   * Formats a date entered by the user.
+   * Executes the user's menu choice.
+   *
+   * @param {string} choice - The user's menu choice.
    */
-  formatDate () {
+  executeChoice (choice) {
+    switch (choice) {
+      case '1':
+        this.formatDateForDisplay()
+        break
+      case '2':
+        this.parseDate()
+        break
+      case '3':
+        this.calculateDateDifference()
+        break
+      case '4':
+        this.addDaysToGivenDate()
+        break
+      case '5':
+        this.isDateOnWeekend()
+        break
+      case '6':
+        this.view.displayResult('Exiting...')
+        return
+      default:
+        this.view.displayResult('Invalid choice. Please try again.')
+    }
+  }
+
+  /**
+   * Formats a date entered by the user for display.
+   */
+  formatDateForDisplay () {
     const dateInput = this.view.getDateInput('Enter a date (YYYY-MM-DD): ')
     const date = this.model.parseDate(dateInput)
     const formattedDate = this.model.formatDate(date)
@@ -90,7 +101,7 @@ class DateTimeController {
   /**
    * Checks if a date entered by the user falls on a weekend.
    */
-  checkIfWeekend () {
+  isDateOnWeekend () {
     const dateInput = this.view.getDateInput('Enter a date (YYYY-MM-DD): ')
     const date = this.model.parseDate(dateInput)
     const weekend = this.model.checkIfWeekend(date)
